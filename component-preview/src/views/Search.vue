@@ -1,5 +1,21 @@
 <template>
-  <div class="search">
-    <h1>This is an search page</h1>
+  <div id="app">
+    <iframe :src="source"></iframe>
   </div>
 </template>
+
+<script>
+export default {
+  name: "Search",
+  data: () => ({
+    source: "/TimerInput/index.html",
+  }),
+};
+</script>
+
+<style>
+iframe {
+  width: 100vw;
+  height: 80vh;
+}
+</style>
